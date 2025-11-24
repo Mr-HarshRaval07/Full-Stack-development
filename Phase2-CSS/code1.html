@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .container{display: flex;
+        flex-direction:row ;
+        
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-wrap: wrap-reverse;
+        gap: 10px;
+        padding: 15px;
+        height:500px}
+        .a{background-color: blue;
+        color:cyan;
+        text-align: center;
+        width: 200px;
+        padding:20 px}
+        .a:nth-child(2){order:1;flex:1 1 100px}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="a">BoxA</div>
+        <div class="a">BoxB</div>
+        <div class="a">BoxC</div>
+    </div>
+</body>
+</html>
