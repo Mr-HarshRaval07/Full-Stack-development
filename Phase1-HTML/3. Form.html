@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <form action="#" method="get" style="background-color: pink; width: 300px">
+        <fieldset>
+            <legend>Pookie Table</legend>
+            <label for="u">Username</label>
+            <input type="text" name="uname" id="u" placeholder="Enter Your Name" minlength="2" maxlength="20" required
+                autofocus autocomplete="on" style="background-color: yellow;">
+            <br><br>
+            <label for="p">Password</label>
+            <input type="password" name="pwd" id="p" placeholder="Enter Your Password"
+                style="background-color: yellow;">
+            <br><br>
+            <label for="e">Email</label>
+            <input type="email" name="mail" id="e" placeholder="Enter Mail" style="background-color: yellow;">
+            <br><br>
+            <label>Date</label>
+            <input type="date" name="book" min="2025-09-07" max="2025-12-31">
+            <br><br>
+            <label>Age</label>
+            <input type="number" name="age" min="1" max="100" step="1" value="18">
+            <br><br>
+            <label>Color</label>
+            <input type="color" name="fav" value="#ff0000">
+            <br><br>
+            <input list="browsers" name="browser">
+            <datalist id="browsers">
+                <option value="Chrome"></option>
+                <option value="Edge"></option>
+            </datalist>
+
+            <br><br>
+            <label> <input type="radio" name="gender" value="Male">
+                Male</label>
+            <input type="radio" name="gender" value="female">
+            Female
+            <br><br>
+            <input type="checkbox" name="hobby" value="Coding" style="background-color: yellow;">
+            Coding
+            <input type="checkbox" name="hobby" value="Gaming" style="background-color: yellow;">
+            Gaming
+
+            <br><br>
+            <input type="reset" style="background-color: yellow;">
+            <input type="submit" style="background-color: yellow;">
+        </fieldset>
+    </form>
+    <hr>
+    <!-- <table border="2px" cellpadding="20px">
+        <thead>
+            <tr>
+                <td colspan="2">Login</td>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table> -->
+
+</body>
+
+</html>
