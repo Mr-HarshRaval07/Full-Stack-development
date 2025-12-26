@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function conf()
+        {
+            let result=confirm('Do you agree?')
+            if(result==true)
+            {
+                document.write('user agree')
+                return true
+            }
+            else
+            {
+                document.write('user disagree')
+                return false
+            }
+        }
+    </script>
+</head>
+<body>
+    <input type="button" value="confirm box" onclick="conf()">
+</body>
+</html>
