@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>    
+</head>
+<body>
+    <img id="a1" src="img1.png">
+    <script>
+        const i=document.querySelector('#a1')
+        i.onclick=()=>{i.setAttribute('src',i.getAttribute("src")=='img1.png'?'img2.png':'img1.png')}
+    </script>
+</body>
+</html>

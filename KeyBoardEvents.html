@@ -1,0 +1,24 @@
+<!-- 
+Write html to perform following tasks:-
+**Bg color should should turn red while key is down and should turn blue while key is up. 
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function fun(id)
+        {
+            id.bgColor='blue'
+        }
+        function fun1(id)
+        {
+            id.bgColor='red'
+        }
+    </script>
+</head>
+<body onkeyup="fun(this)" onkeydown="fun1(this)">
+</body>
+</html>
