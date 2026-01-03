@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num=[1,2,3,4]
+        let square=num.map(num=>num*num)
+        console.log(square)
+
+        let ages=[12,18,22,25]
+        let adult=ages.filter(ages=>ages>=18)
+        document.write(adult+"<br>")
+
+        let names=['a','b','c']
+        names.forEach(name=>{console.log("hello "+name)})
+
+        let colors=['red','green','blue']
+        console.log(colors.includes("green"))
+        console.log(colors.includes("cyan"))       
+
+        let users=[{id:1,name:'a'},{id:2,name:'b'},{id:3,name:'c'}]
+        let u=users.find(u=>u.id===2)
+        console.log(u)
+        console.log(users[2].name)
+    </script>
+</body>
+</html>

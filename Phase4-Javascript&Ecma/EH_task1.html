@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div onmouseover="fun(this)" onmouseout="fun2(this)" style="height:100px;width:100px;background-color:tomato">
+        <script>
+            function fun(e)
+            {
+                e.innerHTML='click pressed'
+                e.style.backgroundColor='cyan'
+            }
+            function fun2(e)
+            {
+                e.innerHTML='click released'
+                e.style.backgroundColor='pink'
+            }
+        </script>
+    </div>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p class="b">Hello 1</p>
+    <p class="b">Hello 2</p>
+    <script>
+        function fun()
+        {
+            let x=document.getElementsByClassName('b')
+            for(i=0;i<x.length;i++)
+            {
+                x[i].innerHTML='I am loop applied.'
+            }
+        }
+    </script>
+    <input type="button" onclick="fun()" value="change">
+</body>
+</html>
