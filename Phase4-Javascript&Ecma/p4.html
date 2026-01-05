@@ -1,0 +1,34 @@
+<!-- Design a login fom with following validation in the password field. Minimum length of password 
+must be of 8 letters and it must have some special characters... -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="a">
+    <input type="submit" onclick="fun()">
+    <script>
+        function fun()
+        {
+            pat=/\W/
+            u=document.getElementById('a').value
+            if(u.length<8)
+            {
+                alert('Password must be of 8 digits')
+            }
+            else if(pat.test(u)==0)
+            {
+                alert('Must contain special characters')
+            }
+            else
+            {
+                alert('Perfect')
+            }
+        }
+    </script>
+</body>
+</html>
