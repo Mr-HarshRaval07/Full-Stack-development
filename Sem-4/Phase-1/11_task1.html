@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <script>
+            size=1
+            function fun(){
+                obj = document.getElementById('a')
+                obj.style.fontSize = size+'px'
+                if(size<=50){
+                    size++
+                }
+            }
+            setInterval(fun,1000)
+        </script>
+    </head>
+    <body>
+        <p id="a" style="color: blue;">hello</p>
+    </body>
+</html>

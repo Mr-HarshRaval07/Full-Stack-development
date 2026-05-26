@@ -1,0 +1,7 @@
+var fs = require('fs')
+fs.mkdirSync("13-03-2026")
+fs.writeFileSync('13-03-2026/hello.txt','GoodMorning')
+data  = fs.readFileSync('13-03-2026/hello.txt')
+console.log(data.toString())
+fs.unlinkSync('13-03-2026/hello.txt')
+fs.rmdirSync('13-03-2026')

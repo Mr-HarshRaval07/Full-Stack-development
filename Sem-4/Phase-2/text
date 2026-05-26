@@ -1,0 +1,23 @@
+npm init
+
+or 
+
+npm init -y
+
+npm install express --save
+
+
+server ne data send krvo che toh post
+
+server per data fetch karavo che toh get
+
+res.write()
+res.end()
+res.send()
+res.json() pass obj + close conn
+res.status() extra
+res.sendFile()
+res.redirect() <-Routes
+res.render() <- template engines
+
+if we use res.write() then res.send() must be empty else it will throw error

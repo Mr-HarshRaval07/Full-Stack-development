@@ -1,0 +1,25 @@
+<!-- initialize 2 variables and increment both the variables each time and display the addition 
+of both the variables at interval of 1 sec -->
+<html>
+    <head>
+        <script>
+            let a =2
+            let b =5
+            let i=0
+
+            let x =setInterval(()=>{
+                document.getElementById('a').innerHTML=a+b
+                a+=1
+                b+=1
+                i+=1
+                if(i===5){
+                    clearInterval(x)
+                }
+
+            },2000)
+        </script>
+    </head>
+    <body>
+        <p id="a"></p>
+    </body>
+</html>

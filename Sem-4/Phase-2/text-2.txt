@@ -1,0 +1,18 @@
+get method passed through url so used for search and filter only
+used to fetch data from database (already existing)
+
+post method acess body so used to send data to backend
+
+
+app.use(expr.urlencoded({extended:true}))
+
+
+When a user submits data through an HTML form (using application/x-www-form-urlencoded), the data arrives as a raw string. This middleware: 
+
+Extracts the data from the request body.
+Converts it into a JavaScript object.
+Attaches that object to the req.body property, so you can easily access form fields like req.body.username
+
+
+The extended option determines which library is used to parse the data: 
+extended: true: Uses the qs library. This is the more powerful option as it allows for nested objects and arrays to be parsed from the URL-encoded format

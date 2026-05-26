@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+        <form class="was-validated">
+            <div class="b-4 form-floating">
+                <input class="form-control" type="text" placeholder="Enter name" required>
+                <label class="form-label" value="Name">Name</label>
+                <div class="valid-feedback">Nice Name</div>
+                <div class="invalid-feedback">Worst Name</div>
+            </div>
+            <div class="b-4 form-floating">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="username" required>
+                    <span class="input-group-text">@</span>
+                    <input type="text" class="form-control" placeholder="domain" required>
+                </div>
+            </div>
+            <div class="b-4 form-floating">
+                <textarea type="text" placeholder="Enter Here"></textarea>
+            </div>
+            <label class="form-label" >Gender</label>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="Gender">
+                <label class="form-check-label">Male</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="Gender">
+                <label class="form-check-label">Female</label>
+            </div>
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#z1">Send</button>
+            <div class="modal fade" id="z1">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h2 class="modal-title">Ohkk</h2>
+                            <button class="btn btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                        <div class="modal-body">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione repudiandae dignissimos incidunt maiores et! Necessitatibus dolore nihil maiores odit aliquam minima voluptatem? Voluptatem earum nesciunt sunt ipsum ipsam vitae distinctio.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+</body>
+</html>

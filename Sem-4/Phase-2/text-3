@@ -1,0 +1,8 @@
+app.use('/data')
+
+works on every path with /data
+/data/hi/ou (works)
+
+app.get('/data')
+works on /data only
+doesnt work on other path such as /data/dev/hi 

@@ -1,0 +1,10 @@
+var fs = require('fs')
+fs.writeFileSync("hello.txt",'Good morning')
+fs.appendFileSync("hello.txt",'\nhi')
+var data=fs.readFileSync('hello.txt')
+console.log(data) //buffer value
+console.log(data.toString())
+var data2=fs.readFileSync('hello.txt','utf-8')
+console.log(data2)
+// fs.renameSync('hi.txt','hey.txt')
+fs.unlinkSync('hey.txt')
